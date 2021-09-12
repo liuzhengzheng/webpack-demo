@@ -1,0 +1,28 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sideEffects": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build:pro": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mission-sun/webpack-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mission-sun/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/mission-sun/webpack-demo#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
